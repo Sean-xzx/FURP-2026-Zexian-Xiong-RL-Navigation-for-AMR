@@ -34,7 +34,7 @@ This is your project home for the FURP programme. **Fork this template**, rename
 | Team or individual | _..._ |
 | Cited paper being replicated | _title + link/DOI_ |
 
-**One-line summary:** _What is your project about? (1–2 sentences)_
+**One-line summary:** Reproduce a reinforcement-learning PointNav baseline in the Habitat simulator and study how reward and observation design affect navigation performance, as a step toward end-to-end AMR navigation.
 
 ---
 
