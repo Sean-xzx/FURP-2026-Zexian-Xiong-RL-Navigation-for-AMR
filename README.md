@@ -27,7 +27,7 @@ This is your project home for the FURP programme. **Fork this template**, rename
 |---|---|
 | Student name(s) | Zexian Xiong |
 | Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
-| Project tag | RLNavigationForAMR |
+| Project tag | RL-Navigation-For-AMR |
 | Track | Research |
 | Supervising faculty | FoSE |
 | Project lead | Tianxiang Cui |
