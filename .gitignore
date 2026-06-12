@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Data & large files (link to sources instead of committing)
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+*.h5
+*.ckpt
+*.pth
+data/
+!**/data/.gitkeep
+
+# Secrets — NEVER commit credentials
+.env
+*.key
+secrets.*
