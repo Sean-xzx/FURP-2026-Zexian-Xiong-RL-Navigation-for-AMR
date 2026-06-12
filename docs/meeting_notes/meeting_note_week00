@@ -1,0 +1,48 @@
+# 2026-06-05
+
+**Date:** 2026-06-05
+**Type:** FURP Project Kick-off Meeting
+
+## Discussion Summary
+
+### FURP Requirements
+
+* Project duration: approximately 8–10 weeks.
+* Weekly progress reports are required.
+* GitHub will be used for project management and progress tracking.
+* Certificate requirements:
+
+  * Attend more than 50% of activities.
+  * Submit a poster.
+  * Participate in the final presentation.
+
+### RL-Navigation-for-AMR Project
+
+* Objective: enable autonomous mobile robots (AMRs) to navigate based on human intentions.
+* Combine Large Language Models (LLMs) with robot perception and navigation.
+* Main research directions:
+
+  * AMR deployment and navigation algorithms.
+  * Reinforcement learning-based trajectory generation.
+* ROS2 environment setup is required.
+* Students should learn the basic robot control workflow.
+* Additional safety and CC training will be arranged in June.
+
+### Experience Sharing
+
+* Start with survey papers and literature reviews.
+* Understand baseline methods before exploring advanced approaches.
+
+## Action Items
+
+* [ ] Submit GitHub account information.
+* [ ] Set up the ROS2 environment.
+* [ ] Complete the basic workflow tutorial.
+* [ ] Attend the upcoming training session.
+* [ ] Begin literature review and baseline study.
+* [ ] Submit weekly progress reports.
+
+## Questions / Follow-ups
+
+* What baseline methods will be provided?
+* What are the expectations for the final poster and presentation?
