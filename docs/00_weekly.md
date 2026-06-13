@@ -30,6 +30,37 @@
 
 <!-- =================  YOUR ENTRIES BELOW  ================= -->
 
+### Smoke Test Update in Week 1 — 2026-06-13
+
+**Progress**
+- Completed the third smoke test example: **run one shortest-path navigation episode**.
+- Implemented a simple 10×10 GridWorld navigation task on Windows 11.
+- The agent moved from `(0, 0)` to `(9, 9)` while avoiding obstacles.
+- The script printed the trajectory, movement steps, episode return, and saved a rendered trajectory image.
+
+**Evidence**
+- `gridworld_shortest_path_smoke.py`
+- `smoke_test_output.txt`
+- `gridworld_trajectory.png`
+
+**Result**
+- Path length: 19 positions
+- Movement steps: 18
+- Episode return: 2
+- Status: **SMOKE TEST PASSED**
+
+**Note**
+- This is a Windows-compatible GridWorld smoke test, not a Habitat-Sim smoke test.
+- Habitat-Sim rendering is still blocked by the current Windows/WSL setup.
+
+**Next steps**
+- Implement random-policy navigation.
+- Add reward design.
+- Start a basic Q-learning baseline.
+
+
+
+
 ### Week 1 — 2026-06-11
  
 **Attended this week's meeting:** Yes
