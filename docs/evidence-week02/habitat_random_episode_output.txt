@@ -1,0 +1,18 @@
+Step 1: locating Habitat test scene
+Scene found: data/versioned_data/habitat_test_scenes/skokloster-castle.glb
+Step 2: building Habitat-Sim config
+Step 3: starting Simulator()
+Step 4: initializing agent
+Random navigable start position: [-3.013  0.046  7.306]
+Step 5: running one random navigation episode
+step=01, action=move_forward, position=[-3.197  0.047  7.137]
+step=02, action=turn_left, position=[-3.197  0.047  7.137]
+step=03, action=turn_left, position=[-3.197  0.047  7.137]
+step=04, action=move_forward, position=[-3.428  0.046  7.041]
+step=05, action=turn_left, position=[-3.428  0.046  7.041]
+step=06, action=move_forward, position=[-3.672  0.039  6.986]
+step=07, action=turn_left, position=[-3.672  0.039  6.986]
+step=08, action=turn_left, position=[-3.672  0.039  6.986]
+step=09, action=turn_left, position=[-3.672  0.039  6.986]
+step=10, action=turn_left, position=[-3.672  0.039  6.986]
+HABITAT SMOKE TEST PASSED: Simulator started and one no-sensor random navigation episode ran.
