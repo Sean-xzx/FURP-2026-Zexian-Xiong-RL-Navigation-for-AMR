@@ -39,25 +39,22 @@
 
 **本周进度**
 
-- 为所选方向 **RL Navigation for AMR(Habitat 路线)** 完成了一次 Habitat-Sim 冒烟测试。
-- 跑通了第三个冒烟测试示例:**一个随机导航回合(random navigation episode)**。
-- 使用官方测试场景 `skokloster-castle.glb`。
-- 成功启动了 `Simulator()`,在一个随机可通行位置初始化了一个 agent,并执行了 10 个随机动作(`move_forward`、`turn_left`、`turn_right`)。
-- 将终端输出保存为 `habitat_random_episode_output.txt`。
+- 完成了一次 Habitat-Sim 冒烟测试。
+- 接入 Qwen 大模型，实现了 turtlesim 中小乌龟受**自然语言控制移动**
+<img width="853" height="370" alt="image" src="https://github.com/user-attachments/assets/a3101c12-6670-481d-8152-9112fba4189b" />
+<img width="253" height="265" alt="image" src="https://github.com/user-attachments/assets/0cd74339-8e7d-4205-89ff-a660ea2511bc" />
+
+
 
 **挑战与阻碍**
 
-- 本次测试**仅为无传感器(no-sensor)模式**:RGB/深度渲染与截图输出尚未测试。
-- Habitat 报出了缺少语义标注(semantic annotations)的警告,但未中断模拟器或该回合。
-- 当前 Windows/WSL 环境下,GPU 渲染仍未得到验证。
+- 本次冒烟测试**仅为无传感器(no-sensor)模式**:RGB/深度渲染与截图输出尚未测试。
 
 **下一步**
 
-- 若渲染可用,尝试一次基础的 RGB/深度传感器观测测试。
 - 学习 Habitat-Lab 的 PointNav 任务结构。
-- 准备一个简单的 PointNav 式随机或最短路 baseline。
 
-**投入时长(可选):** 10h
+**投入时长(可选):** 
 
 **链接(可选):**
 
