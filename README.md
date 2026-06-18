@@ -52,3 +52,4 @@ ROS2 控制小乌龟自动移动到目标点
 ---
 
 ## 5. 已读 / 正在读的资料
+正在读：**VLN-R2R:** https://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Vision-and-Language_Navigation_Interpreting_CVPR_2018_paper.pdf
