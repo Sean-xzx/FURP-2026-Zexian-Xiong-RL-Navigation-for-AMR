@@ -1,109 +1,54 @@
-# FURP Project Repository
+# RL Navigation for AMR 项目记录
 
-> **Faculty Undergraduate Research Practice (FURP)**
-> Undergraduate Research Group · Faculty of Science and Engineering · University of Nottingham Ningbo China
+> FURP 本科科研项目
+> 
+> 项目方向：强化学习导航、机器人控制、奖励设计
+> 
+> 当前阶段：ROS2 小乌龟自动导航 + 国产大模型自然语言接口
 
-This is your project home for the FURP programme. **Fork this template**, rename your repo, fill in the content each week, and share it with us (or make it public) so we can follow your progress and review your weekly work.
+## 1. 项目信息
 
+| 项目     | 内容                                                           |
+| -------- | -------------------------------------------------------------- |
+| 学生     | 熊泽贤（Zexian Xiong / Sean）                                  |
+| 项目名称 | RL Navigation for AMR                                          |
+| 项目方向 | Reinforcement Learning Navigation for Autonomous Mobile Robots |
+| 当前路线 |                                                                |
+| 当前定位 |                                                                |
 ---
 
-## Getting started (do this in Week 1)
+## 2. 当前最新成果
 
-1. **Fork / use this template** to create your own repository.
-2. **Rename your repo** following the naming convention:
-   ```
-   FURP-2025/YourName-ProjectTag
-   # e.g. furp-2025/Jason-ROSBootcamp
-   ```
-3. **Give us access:** either make the repo **public**, or **share it** with the research group accounts (ask your project lead for the usernames to add as collaborators).
-4. **Fill in this README** — replace the placeholders in the *Project Info* section below.
-5. **Start your weekly log** in [`docs/00_weekly.md`](docs/00_weekly.md).
+目前已完成一个最小版 **国产大模型 + ROS2 turtlesim 自然语言导航 demo** 的前置验证：
 
----
-
-## Project Info — *fill this in*
-
-| Field | Your entry |
-|---|---|
-| Student name(s) | Zexian Xiong |
-| Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
-| Project tag | RL-Navigation-For-AMR |
-| Track | Research |
-| Supervising faculty | FoSE |
-| Project lead | Tianxiang Cui |
-| Team or individual | _..._ |
-| Cited paper being replicated | _title + link/DOI_ |
-
-**One-line summary:** Reproduce a reinforcement-learning PointNav baseline in the Habitat simulator and study how reward and observation design affect navigation performance, as a step toward end-to-end AMR navigation.
-
----
-
-## Repository structure
-
-This structure is **mandatory** — please keep it intact.
-
-```
-/docs
- ├── 00_weekly.md         ← update EVERY week: progress, challenges, next steps
- └── meeting_notes/       ← key takeaways from all team meetings
-/src                      ← your code / experiments / materials
-FURP_Showcase.pdf         ← your poster / presentation PDF, in the repo root
+```text
+中文自然语言指令
+    ↓
+Qwen / 通义千问解析目标坐标
+    ↓
+ROS2 控制小乌龟自动移动到目标点
 ```
 
-- **`docs/00_weekly.md`** — your weekly progress log. This is the first thing we check.
-- **`docs/meeting_notes/`** — one file per meeting with key takeaways and action items.
-- **`src/`** — all your code, scripts, notebooks, and experiment materials.
-- **`FURP_Showcase.pdf`** — your final poster, placed in the **repo root** with this exact filename.
+当前已经完成：
+
+- ROS2 `turtlesim` 自动到点 baseline；
+- Qwen / 通义千问自然语言解析测试；
+
+## 3. 当前进展概览
+
+详细过程写在 `docs/00_weekly.md` 中。README 只保留主线概览。
+
+| 阶段                    | 状态   | 简要说明                                                        |
+| ----------------------- | ------ | --------------------------------------------------------------- |
+| Habitat 最小冒烟测试    | 已完成 | 启动 Habitat-Sim，运行 no-sensor random episode                 |
+| ROS2 turtlesim 手动控制 | 已完成 | 启动小乌龟仿真，并用键盘控制移动                                |
+| ROS2 turtlesim 自动到点 | 已完成 | 使用 P-controller 控制小乌龟移动到 `(8.0, 8.0)`               |
+| Qwen 自然语言解析       | 已完成 | 将“让小乌龟去右上角”解析为 `{"goal_x": 8.0, "goal_y": 8.0}` |
+| Qwen + ROS2 完整闭环    | 进行中 | 将自然语言解析结果接入小乌龟自动导航程序                        |
+
+## 4. 项目目标 / 项目规划
+
 
 ---
 
-## The three rules for your certificate
-
-To earn your FURP certificate, **all three** must be satisfied:
-
-1. **Attend > 50%** of programme activities (weekly meetings, workshops, scheduled sessions — online or in person).
-2. **Submit a poster** — place it as `FURP_Showcase.pdf` in this repo root.
-3. **Present at the Poster Showcase** — in person (strongly preferred), or send a stand-in if you truly cannot attend.
-
-> Miss any one of the three, and the certificate is not awarded this round.
-
-**Research Track — minimum for certification:** successful replication of a cited paper with at least **10% innovation** (reproduce the work *and* add something new).
-
----
-
-## Weekly cadence
-
-Every week, you should:
-
-- ✅ Update [`docs/00_weekly.md`](docs/00_weekly.md)
-- ✅ Log meeting notes in [`docs/meeting_notes/`](docs/meeting_notes/)
-- ✅ Attend the weekly meeting (online or in person)
-
-Consistent weekly engagement is the backbone of a successful FURP project — and it feeds directly into your attendance (Rule 1).
-
----
-
-## Leave & withdrawal
-
-Any **leave of absence** or **withdrawal** must be notified to us **by email** — a verbal or chat message is not sufficient.
-
-- **Leave:** email *before* the session where possible, state the date(s) and reason. Note that leave still counts against the >50% attendance rule.
-- **Withdrawal:** email us to formally withdraw so we can free your project slot and update records.
-- **Switching tracks:** email the project lead with the subject *"Project Transfer Request"* and CC your supervising faculty member.
-
-> No email = no record. Always put leave and withdrawal in writing.
-
----
-
-## Quick checklist
-
-- [ ] Forked the template and renamed the repo (`FURP-2025/YourName-ProjectTag`)
-- [ ] Made the repo public **or** shared it with the research group
-- [ ] Filled in the *Project Info* table above
-- [ ] Started `docs/00_weekly.md`
-- [ ] Created my first file in `docs/meeting_notes/`
-- [ ] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
-
----
-
-*Bridging the gap between classroom knowledge and cutting-edge research.*
+## 5. 已读 / 正在读的资料
