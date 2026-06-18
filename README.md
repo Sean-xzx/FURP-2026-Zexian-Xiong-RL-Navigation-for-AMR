@@ -1,4 +1,4 @@
-<img width="128" height="128" alt="icon-128" src="https://github.com/user-attachments/assets/8b0bd45a-1f3e-42a2-93f9-39d6dbb77644" /># RL Navigation for AMR 项目记录
+# RL Navigation for AMR 项目记录
 
 > FURP 本科科研项目
 > 
