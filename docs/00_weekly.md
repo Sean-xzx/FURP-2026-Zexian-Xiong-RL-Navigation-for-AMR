@@ -1,4 +1,4 @@
-# Weekly Progress Log
+# Weekly Progress Log 最新进度请看中文版
 
 > Update this file **every week**. Add a new entry at the top for each week.
 > This is the first thing we check during review. Keep it honest and specific — it also feeds your attendance record (Rule 1).
