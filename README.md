@@ -1,4 +1,4 @@
-# RL Navigation for AMR 项目记录
+<img width="128" height="128" alt="icon-128" src="https://github.com/user-attachments/assets/8b0bd45a-1f3e-42a2-93f9-39d6dbb77644" /># RL Navigation for AMR 项目记录
 
 > FURP 本科科研项目
 > 
@@ -53,9 +53,26 @@ ROS2 控制小乌龟自动移动到目标点
 
 ---
 
-## 5. 已读 / 正在读的资料
+## 5. 阅读资料
 正在读：
 
 **1. VLN-R2R:** https://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Vision-and-Language_Navigation_Interpreting_CVPR_2018_paper.pdf
 
 **2. Q-Learning:** https://link.springer.com/content/pdf/10.1007/BF00992698.pdf
+
+阅读计划:
+
+**1. R2R benchmark:** [Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments](https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Vision-and-Language_Navigation_Interpreting_CVPR_2018_paper.html)  
+   The classic benchmark that made instruction-following navigation concrete and measurable.
+
+**2. Speaker-Follower:** [Speaker-Follower Models for Vision-and-Language Navigation](https://arxiv.org/abs/1806.02724)  
+   A strong early baseline with data augmentation and pragmatic training ideas.
+
+**3. PREVALENT:** [PREVALENT: Learning Representations for Vision and Language Navigation](https://arxiv.org/abs/2001.10266)  
+   Useful for understanding pretraining and representation learning in VLN.
+
+**4.RxR:** [Room-Across-Room: Multilingual Vision-and-Language Navigation](https://arxiv.org/abs/2010.07954)  
+   Important if you care about multilingual or richer instruction descriptions.
+
+**5. VLN-CE:** [Vision-and-Language Navigation in Continuous Environments](https://arxiv.org/abs/2004.02857)  
+   Bridges graph-based VLN benchmarks and more realistic continuous navigation.
