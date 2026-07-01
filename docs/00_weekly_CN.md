@@ -33,6 +33,48 @@
 
 <!-- =================  以下为你的记录  ================= -->
 
+### 第 4 周 — 2026-06-29~
+
+**本周是否参加会议:** 是
+
+**本周进度**
+
+- 在 Gazebo 中成功运行 TurtleBot3 自定义环境。
+- 完成 Cartographer SLAM 建图，并保存地图文件。
+- 启动 Nav2，完成 AMCL 定位。
+- 在 RViz 中使用 Nav2 Goal，实现小车自动导航到目标点。
+<img width="464" height="488" alt="Screenshot 2026-07-01 155649" src="https://github.com/user-attachments/assets/12513ccd-2411-42ac-aa6d-5c8199dcf95c" />
+<img width="1279" height="761" alt="Screenshot 2026-07-01 154829" src="https://github.com/user-attachments/assets/093292ea-f70f-442f-ac95-b39652b4ce46" />
+<img width="1279" height="761" alt="Screenshot 2026-07-01 155343" src="https://github.com/user-attachments/assets/5f2d0529-8126-4b86-8f6b-86d93609698a" />
+
+
+**挑战与阻碍**
+
+- Gazebo 中机器人 spawn 有时不稳定，需要手动补进世界。
+- Nav2 初始阶段出现 TF 报错，设置 2D Pose Estimate 后解决。
+
+**下一步**
+
+- 整理本次 SLAM + Nav2 流程，作为后续自然语言导航和 RL 导航的 baseline。
+
+**投入时长(可选):**
+
+**链接(可选):**
+
+### 第 3 周 — 2026-06-22~
+
+**本周是否参加会议:**
+
+**本周进度**
+
+**挑战与阻碍**
+
+**下一步**
+
+**投入时长(可选):**
+
+**链接(可选):**
+
 ### 第 2 周 — 2026-06-15~
 
 **本周是否参加会议:** 是
@@ -41,10 +83,8 @@
 
 - 完成了一次 Habitat-Sim 冒烟测试。
 - 接入 Qwen 大模型，实现了 turtlesim 中小乌龟受**自然语言控制移动**
-<img width="853" height="370" alt="image" src="https://github.com/user-attachments/assets/a3101c12-6670-481d-8152-9112fba4189b" />
-<img width="253" height="265" alt="image" src="https://github.com/user-attachments/assets/0cd74339-8e7d-4205-89ff-a660ea2511bc" />
-
-
+  `<img width="853" height="370" alt="image" src="https://github.com/user-attachments/assets/a3101c12-6670-481d-8152-9112fba4189b" />`
+  `<img width="253" height="265" alt="image" src="https://github.com/user-attachments/assets/0cd74339-8e7d-4205-89ff-a660ea2511bc" />`
 
 **挑战与阻碍**
 
@@ -54,7 +94,7 @@
 
 - 学习 Habitat-Lab 的 PointNav 任务结构。
 
-**投入时长(可选):** 
+**投入时长(可选):**
 
 **链接(可选):**
 
