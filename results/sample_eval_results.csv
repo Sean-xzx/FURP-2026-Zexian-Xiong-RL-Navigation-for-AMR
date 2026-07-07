@@ -1,0 +1,6 @@
+scenario,success,collision,timeout,steps,path_length
+standard,true,false,false,120,5.4
+u_trap,false,false,true,300,7.8
+narrow_door,false,true,false,80,3.1
+double_u,true,false,false,180,6.2
+symmetric_corridor,false,false,true,300,8.0
