@@ -1,0 +1,18 @@
+=== IR-SIM Smoke Test ===
+Python: 3.10.20
+IR-SIM version: 2.10.1
+IR-SIM module: /home/sean-xzx/miniconda3/envs/irsim_rl/lib/python3.10/site-packages/irsim/__init__.py
+
+=== IR-SIM API Check ===
+has irsim.make: True
+has irsim.EnvBase: True
+has irsim.EnvBase3D: True
+
+=== PyTorch CUDA Check ===
+torch version: 2.11.0+cu128
+cuda available: True
+gpu: NVIDIA GeForce RTX 3060
+cuda tensor device: cuda:0
+cuda tensor test: OK
+
+Smoke test finished.
