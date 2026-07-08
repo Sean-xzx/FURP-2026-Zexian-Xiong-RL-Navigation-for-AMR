@@ -33,6 +33,47 @@
 
 <!-- =================  以下为你的记录  ================= -->
 
+
+### 第 5 周 — 2026-07-07~
+
+**本周是否参加会议:** 是
+
+**本周进度**
+
+- 在学校台式机上确认 Ubuntu 开发环境和 RTX 3060 GPU 可用。
+- 配置 GitHub 仓库，完成 clone、commit、push 流程。
+- 创建 conda 环境 `irsim_rl`，安装 PyTorch GPU 版本，并通过 CUDA 测试。
+- 安装并验证 IR-SIM 2.10.1。
+- 编写 `metrics.py`，实现 SR / CR / TR 等导航评估指标。
+- 编写 `evaluate_csv.py`，实现从 CSV 读取 episode 结果并输出评估指标。
+- 编写 `irsim_smoke_test.py`，验证 IR-SIM 与 PyTorch CUDA 环境可用。
+- 保存 smoke test 输出结果作为环境验证证据。
+- 制作 Ubuntu 22.04.5 启动盘，为后续 ROS2 Humble 环境准备。
+
+**挑战与阻碍**
+
+- 当前系统为 Ubuntu 24.04，与 ROS2 Humble 推荐环境不完全匹配。
+- IR-SIM 已完成安装验证，但还未跑通正式 world 和随机动作 episode。
+- 当前仍处于环境搭建和评估工具准备阶段，尚未开始 CNNTD3 训练。
+
+**下一步**
+
+- 将 Ubuntu 22.04 安装到移动固态硬盘。
+- 安装 ROS2 Humble，并跑通 turtlesim。
+- 跑通 IR-SIM basic world 和 random-action demo。
+- 将 episode 结果保存为 CSV，并用 `evaluate_csv.py` 计算 SR / CR / TR。
+- 后续复现 IR-SIM hard scenarios 和 CNNTD3 baseline。
+
+**投入时长(可选):** 4–6h
+
+**链接(可选):**
+
+- `src/eval/metrics.py`
+- `src/eval/evaluate_csv.py`
+- `src/irsim_env/irsim_smoke_test.py`
+- `docs/evidence-week00/irsim_smoke_test_output.txt`
+
+
 ### 第 4 周 — 2026-06-29~
 
 **本周是否参加会议:** 是
