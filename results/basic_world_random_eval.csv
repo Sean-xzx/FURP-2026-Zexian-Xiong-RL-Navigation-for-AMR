@@ -1,0 +1,11 @@
+scenario,episode_id,success,collision,timeout,steps,path_length
+basic_world,0,False,False,True,201,9.582
+basic_world,1,False,False,True,201,10.0419
+basic_world,2,False,False,True,201,9.9726
+basic_world,3,False,False,True,201,10.366
+basic_world,4,False,False,True,201,10.0154
+basic_world,5,False,False,True,201,9.4357
+basic_world,6,False,False,True,201,9.8878
+basic_world,7,False,False,True,201,9.8116
+basic_world,8,False,False,True,201,10.2905
+basic_world,9,False,True,False,107,5.4307
