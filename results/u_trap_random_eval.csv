@@ -1,0 +1,11 @@
+scenario,episode_id,success,collision,timeout,steps,path_length
+u_trap,0,False,True,False,45,2.2466
+u_trap,1,False,True,False,41,2.1834
+u_trap,2,False,True,False,51,2.2145
+u_trap,3,False,True,False,54,2.266
+u_trap,4,False,True,False,42,2.2202
+u_trap,5,False,True,False,46,2.2997
+u_trap,6,False,True,False,42,2.1663
+u_trap,7,False,True,False,39,2.2311
+u_trap,8,False,True,False,44,2.2473
+u_trap,9,False,True,False,40,2.2112

@@ -1,0 +1,46 @@
+world:
+  height: 10
+  width: 10
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+  control_mode: auto
+  collision_mode: stop
+
+robot:
+  - kinematics:
+      name: diff
+    shape:
+      name: circle
+      radius: 0.2
+    state: [5.0, 5.0, 1.57]
+    goal: [5.0, 9.0, 0]
+    color: g
+    plot:
+      show_trajectory: true
+      show_goal: true
+
+obstacle:
+  # left wall of U
+  - shape:
+      name: rectangle
+      length: 0.3
+      width: 4.0
+    state: [3.5, 5.5, 0]
+    color: k
+
+  # right wall of U
+  - shape:
+      name: rectangle
+      length: 0.3
+      width: 4.0
+    state: [6.5, 5.5, 0]
+    color: k
+
+  # top wall of U
+  - shape:
+      name: rectangle
+      length: 3.0
+      width: 0.3
+    state: [5.0, 7.5, 0]
+    color: k
