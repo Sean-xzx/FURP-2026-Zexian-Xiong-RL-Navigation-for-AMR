@@ -86,11 +86,9 @@
 
 ​	b. 当多个移动障碍物向小车逼近，小车不懂向后退再绕行
 
-<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/4e442bb1-d963-4fae-b5d3-048de77b7aba" />
-<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/43778a28-a72b-40ee-8a31-f333dca370e2" /><br>
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/af83e262-2f63-43c7-8a8d-d6cf99081c54" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/939e1d8f-1ac2-4ebc-be11-e50b28422645" />
 
-<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/b638596b-0e7d-4f04-8dcb-27c5318e1746" />
-<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/7ec73871-0976-4a07-b6d0-977fec973413" />
 
 
 
