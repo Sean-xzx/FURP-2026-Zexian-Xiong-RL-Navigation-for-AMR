@@ -86,6 +86,12 @@
 
 ​	b. 当多个移动障碍物向小车逼近，小车不懂向后退再绕行
 
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/4e442bb1-d963-4fae-b5d3-048de77b7aba" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/43778a28-a72b-40ee-8a31-f333dca370e2" /><br>
+
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/b638596b-0e7d-4f04-8dcb-27c5318e1746" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/7ec73871-0976-4a07-b6d0-977fec973413" />
+
 
 
 5. **对未观测到物体的判断**：小车在某时间点对接下来一段时间的预测时（假设 0.1s 为 Delta T，预测后 1s），后面若干个时间点的点云都只有最初的扫描数据，导致可能本该在后面时间点中可观测到的障碍物是空白状态
