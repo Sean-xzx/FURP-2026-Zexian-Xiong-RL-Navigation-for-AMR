@@ -34,6 +34,70 @@
 <!-- =================  YOUR ENTRIES BELOW  ================= -->
 
 
+
+### Week 6 — 2026-07-15
+
+**Attended this week's meeting:** Yes / No (if No, did you email leave? Yes / No)
+
+**Progress this week**
+
+# NeuPAN研究
+
+![Architecture.png](https://github.com/hanruihua/NeuPAN/blob/main/img/Architecture.png?raw=true)
+
+认知阶段：没有研究原理（Latent Distance Features），没有研究 DUNE 输出中的“往哪躲”的原理，对 NRMP 中从最小化系数之后求解器的工作原理比较模糊；其余理解基本到位
+
+找到的可行方向：
+
+1. **分级安全边距**：机器人通过不同障碍时的最短距离可以分级。以下是两个场景解释：
+
+   ​	a. 通过墙时可以距离近，通过人时需要距离较远
+
+   ​	b. 如果通过墙时的距离和通过人时的距离一样，比如1m，可能出现在走廊中被卡死的情况
+
+   **调研**：“自适应安全边距” 2026 年刚被研究，但不在 NeuPAN 上
+
+2. **非匀速障碍物**：NeuPAN 假设所有障碍物都为匀速运动，可障碍物的运动可能不规则以至于造成危险
+
+​	**调研**：已有三个研究：
+
+​	1）多帧点约束 + 预测模块
+
+​	2）多普勒雷达直接测每点速度 + D-KalmanNet 跟踪 + DT-MPC 自动调参
+
+​	3）MPC 参数分层主动调优 + 多普勒
+
+1. **2D 转 3D**：NeuPAN 假设场景为 2D，如将小车抽象为一个凸多边形，可实际所有物体都为 3D
+
+2. **自主脱困 —— 优化停止和倒车（并拐弯）的行为**：有时候这种行为可以更高效的绕过障碍，以下是两个场景解释：
+
+   ​	a. NeuPAN 有导航缺陷（对参考路径的依赖），若碰到 U 型墙壁时会停在 U 型墙壁凹处，或沿凹处平行移动却无法绕开
+
+   ​	b. 当多个移动障碍物向小车逼近，小车不懂向后退再绕行
+
+3. **对未观测到物体的判断**：小车在某时间点对接下来一段时间的预测时（假设 0.1s 为 Delta T，预测后 1s），后面若干个时间点的点云都只有最初的扫描数据，导致可能本该在后面时间点中可观测到的障碍物是空白状态
+
+   **调研**：幽灵体概念
+
+4. **精确化两个小车预测点之间的轨迹**：现在使用的是欧拉法以匀速直线运动估计轨迹，实际大部分情况为弧线，这样会导致位置偏差
+
+ 
+
+ 
+
+**Challenges & blockers**
+
+- _What got in the way? What are you stuck on?_
+
+**Next steps**
+
+- _What will you do next week?_
+
+**Hours spent (optional):** _e.g. 6h_
+
+**Links (optional):** _commits, notebooks, docs, datasets..._
+
+
 ### Week 5 — 2026-07-07~
 
 **Attended this week's meeting:** Yes
