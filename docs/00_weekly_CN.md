@@ -79,7 +79,10 @@
 
 ​	a. NeuPAN 有导航缺陷（对参考路径的依赖），若碰到 U 型墙壁时会停在 U 型墙壁凹处，或沿凹处平行移动却无法绕开
 
-<img src="/home/sean-xzx/.config/Typora/typora-user-images/image-20260715111439092.png" alt="image-20260715111439092" style="zoom: 25%;" /><img src="/home/sean-xzx/.config/Typora/typora-user-images/image-20260715111445812.png" alt="image-20260715111445812" style="zoom: 25%;" /><img src="/home/sean-xzx/.config/Typora/typora-user-images/image-20260715111456519.png" alt="image-20260715111456519" style="zoom: 25%;" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/50f852eb-c7dd-4832-94ce-6ec630b88136" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/454a2d8f-3b49-4997-96fd-3f7795b241da" />
+<img width="300" height="310" alt="image" src="https://github.com/user-attachments/assets/93cfedfa-6ad8-45ce-a94f-d2a17ca8fdbb" />
+
 
 ​	b. 当多个移动障碍物向小车逼近，小车不懂向后退再绕行
 
