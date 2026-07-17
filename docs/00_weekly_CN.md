@@ -41,6 +41,15 @@
 
 **Progress this week**
 
+# 对 OrangePi 运算速度和 NeuPAN 运算周期之间的差异的研究
+
+第一天～第二天：我们使用“基于状态前向预测与自运动补偿的时延补偿方法“对源代码进行修改，效果不如初始代码；
+
+第三天：正在测试实际延迟 1）控制延迟 2）IMU和激光雷达之间的延迟
+<img width="2000" height="2500" alt="3d48515cbf9ffa8f6fa46e0d8713fb7c" src="https://github.com/user-attachments/assets/1dd3ba75-d3c4-48dc-8f17-ab6014a9d657" />
+
+
+
 # NeuPAN研究
 
 ![Architecture.png](https://github.com/hanruihua/NeuPAN/blob/main/img/Architecture.png?raw=true)
