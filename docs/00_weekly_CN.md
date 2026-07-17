@@ -35,7 +35,7 @@
 
 
 
-### Week 6 — 2026-07-15
+### Week 6 — ～2026-07-17
 
 **Attended this week's meeting:** Yes / No (if No, did you email leave? Yes / No)
 
