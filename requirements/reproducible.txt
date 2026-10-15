@@ -1,0 +1,20 @@
+# Exact verification environment; Python 3.12. Windows-only transitive dependencies have markers.
+colorama==0.4.6; sys_platform == "win32"
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.67.0
+ImageIO==2.38.1
+ir-sim==2.10.1
+kiwisolver==1.5.1
+loguru==0.7.3
+matplotlib==3.10.3
+numpy==2.2.6
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+scipy==1.18.1
+shapely==2.2.0
+six==1.17.0
+win32_setctime==1.2.0

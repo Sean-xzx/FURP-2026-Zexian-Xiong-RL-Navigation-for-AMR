@@ -1,17 +1,9 @@
-# `/src` — your work goes here
+# Source map / 源码导览
 
-Put all your code, scripts, notebooks, experiment configs, and project materials in this folder.
+World YAML → `irsim_env/evaluate_random_policy.py` → episode CSV → `eval/evaluate_csv.py` → `eval/metrics.py`.
 
-**Research Track reminder:** your project should reproduce a cited paper and add **at least 10% innovation** (something new on top of the replication). Organise this folder however suits your project, but keep it tidy enough that a reviewer can follow what you did.
+YAML defines geometry and robot states; the evaluator sends random velocities, records episodes and aggregates outcomes. `irsim_env/demos/` retains earlier implementations and its own basic-world YAML for existing callers. Its timeout counter differs from the later evaluator; use `tools/run_random_baseline.py` for new runs.
 
-Suggested (not mandatory) layout:
+YAML 定义几何与机器人状态，随机策略产生 CSV，指标模块汇总结果。保留旧演示及其独立 YAML 以兼容已有调用，新试验使用根目录的带种子启动器。
 
-```
-/src
- ├── README.md          ← how to run your code / what's here
- ├── data/              ← datasets (or links if too large to commit)
- ├── experiments/       ← scripts, notebooks, configs
- └── results/           ← outputs, figures, logs
-```
-
-> Don't commit large datasets or secrets/credentials. Link to data sources instead.
+See [English](../README.md), [中文](../README.zh-CN.md), [reproduction / 复现](../docs/REPRODUCIBILITY.md). STPS training and switching code are absent. 当前未包含 STPS 训练与切换实现。

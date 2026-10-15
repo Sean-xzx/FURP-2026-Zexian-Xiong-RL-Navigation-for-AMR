@@ -34,3 +34,13 @@ data/
 .env
 *.key
 secrets.*
+
+# Local verification outputs and private material
+artifacts/
+.venv-*/
+backups/
+*.bak
+.env.*
+!.env.example
+*.pem
+!results/*.csv

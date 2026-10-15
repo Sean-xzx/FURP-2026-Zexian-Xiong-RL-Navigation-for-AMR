@@ -1,0 +1,27 @@
+name: Verify navigation examples
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    env:
+      MPLBACKEND: Agg
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements/reproducible.txt
+      - run: python -m pip install -r requirements/reproducible.txt
+      - run: python -m pip check
+      - run: python tools/verify_project.py
